@@ -1,9 +1,8 @@
-# Uniswap V2 Deployement Tools.
+# ZumoSwap Deployement Tools.
 
-Clone `uni-v2` and `vvet` repos before continue.
+Clone from VeChain Community open source code.
 
-
-// **Please note this is a draft and this code is under heavy development. NOT to be used in production.**
+https://github.com/VeChainDEXCode/uni-v2-deploy-scripts
 
 ## How TO
 
@@ -65,8 +64,13 @@ Currently, some contracts are deployed on `testnet`:
 | router02       | 0x4c2204ebc042197a728bfe1a771301177d018e32 |
 | vVET/VTHO pool | 0x40d1a9b8b27d4f6799513575b957aaf1e0688d8a |
 
+## Disclaimer (I)
 
-## Disclaimer
+- This repo keeps the upstream license of GPL-3.0.
+- Neither the name of ZumoSwap nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+
+## Disclaimer (II)
 Redistributions of source code must retain this list of conditions and the following disclaimer.
 
 Neither the name of VeChain (VeChain Foundation) nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
