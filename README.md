@@ -52,18 +52,6 @@ make deposit_funds network={http://url} \
     vthoamount={123456}
 ```
 
-## Testnet
-
-Currently, some contracts are deployed on `testnet`:
-
-| Contract       | Address                                    |
-| -------------- | ------------------------------------------ |
-| vVET           | 0x535b9a56c2f03a3658fc8787c44087574eb381fd |
-| vtho           | 0x0000000000000000000000000000456e65726779 |
-| factory        | 0x8d77f31c128c88b52a148167cdc5439cb4bb11db |
-| router02       | 0x4c2204ebc042197a728bfe1a771301177d018e32 |
-| vVET/VTHO pool | 0x40d1a9b8b27d4f6799513575b957aaf1e0688d8a |
-
 ## Disclaimer (I)
 
 - This repo keeps the upstream license of GPL-3.0.
