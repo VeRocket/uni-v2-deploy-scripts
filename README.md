@@ -1,14 +1,11 @@
-# ZumoSwap Deployement Tools.
+# VeRocket (UniSwap V2 on VeChain) Pool related Tools.
 
 Clone from VeChain Community open source code.
 
 https://github.com/VeChainDEXCode/uni-v2-deploy-scripts
 
-## How TO
 
-Read the `Makefile` first before execute below commands.
-
-### Install depedencies
+### Install Dependencies (Linux, Mac)
 ```bash
 make install
 ```

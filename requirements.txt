@@ -1,3 +1,4 @@
+click
 requests
 thor-devkit
 thor-requests>=0.1.4
