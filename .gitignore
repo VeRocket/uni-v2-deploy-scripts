@@ -1,3 +1,7 @@
+# local wallets that don't commit to git
+wallet.testnet.json
+wallet.mainnet.json
+
 .DS_Store
 .vscode
 

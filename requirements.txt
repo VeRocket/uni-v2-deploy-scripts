@@ -1,4 +1,4 @@
 click
 requests
-thor-devkit
-thor-requests>=0.1.4
+thor-devkit<2.0
+thor-requests==1.2.5, <2.0

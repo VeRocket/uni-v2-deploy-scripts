@@ -1,13 +1,48 @@
-# VeRocket (UniSwap V2 on VeChain) Pool related Tools.
+# VeRocket (UniSwap V2 on VeChain) Pool Tools
 
-Clone from VeChain Community open source code.
+## Attribution
+Clone from VeChain Community open source cod [[link]](https://github.com/VeChainDEXCode/uni-v2-deploy-scripts).
 
-https://github.com/VeChainDEXCode/uni-v2-deploy-scripts
+## VeRocket Contracts on VeChain Testnet
+
+|    Contract    |                  Address                   |
+| -------------- | ------------------------------------------ |
+| vVET           | 0x86fb5343bbecffc86185c023a2a6ccc76fc0afd8 |
+| vtho           | 0x0000000000000000000000000000456e65726779 |
+| factory        | 0xadd8fcf3f0e43aa828f2a55e6d1a9fe5c0d7a679 |
+| router02       | 0x91e42759290239a62ac757cf85bb5b74ace57927 |
+| vvet/vtho pool | 0x1e5e9a6540b15a3efa8d4e8fadb82cc8e0e167ca |
+
+## VeRocket Contracts on VeChain Mainnet
+
+|    Contract    |                  Address                   |
+| -------------- | ------------------------------------------ |
+| vVET           | 0x45429a2255e7248e57fce99e7239aed3f84b7a53 |
+| vtho           | 0x0000000000000000000000000000456e65726779 |
+| factory        | 0xbdc2edaea65b51053ffce8bc0721753c7895e12f |
+| router02       | 0x576da7124c7bb65a692d95848276367e5a844d95 |
+| vvet/vtho pool | 0x29a996b0ebb7a77023d091c9f2ca34646bea6ede |
 
 
-### Install Dependencies (Linux, Mac)
+## Install (Linux, Mac)
 ```bash
 make install
+```
+
+## Activate Python Virtual Environment (load libraries)
+```bash
+source ./env/bin/activate
+```
+
+## Use
+```bash
+python3 main.py --help
+```
+
+## Examples
+### Calculate hash to be used by CREATE2 
+```bash
+python3 main.py init-code-hash --json ./external/UniswapV2Pair.json
 ```
 
 ### Deploy vVET
@@ -52,7 +87,7 @@ make deposit_funds network={http://url} \
 ## Disclaimer (I)
 
 - This repo keeps the upstream license of GPL-3.0.
-- Neither the name of ZumoSwap nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+- Neither the name of VeRocket nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
 
 
 ## Disclaimer (II)
