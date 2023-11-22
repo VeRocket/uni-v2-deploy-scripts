@@ -34,41 +34,21 @@ make install
 source ./env/bin/activate
 ```
 
-## Use
+## Usage
 ```bash
 python3 main.py --help
 ```
 
 ## Examples
-### Calculate hash to be used by CREATE2 
+
+### Create a Pool of vVET(VET) + VTHO
+```bash
+python3 main.py create_pool --wallet wallet.mainnet.json --network "https://mainnet.veblocks.net" --factory-file ./external/UniswapV2Factory.json --factory-addr "0xbdc2edaea65b51053ffce8bc0721753c7895e12f" --token0-addr "0x45429a2255e7248e57fce99e7239aed3f84b7a53" --token1-addr "0x0000000000000000000000000000456e65726779"
+```
+
+### Calculate Pair.sol hash to be used by CREATE2 
 ```bash
 python3 main.py init-code-hash --json ./external/UniswapV2Pair.json
-```
-
-### Deploy vVET
-```bash
-make deploy_vvet network={http://url} \
-    private={private_key} \
-    vvet={/path/to/vvet.json} 
-```
-
-### Deploy Factory + Router 02 of Uni v2
-```bash
-make deploy_univ2 network={http://url} \
-    private={private_key} \
-    factory={/path/to/UniswapV2Factory.json} \
-    router={/path/to/UniswapV2Router02.json} \
-    vvetaddress={0x....}
-```
-
-### Create Pool of vVET + VTHO
-```bash
-make create_pool network={http://url} \
-    private={private_key} \
-    factory={/path/to/UniswapV2Factory.json} \
-    factoryaddress={0x...} \
-    vvetaddress={0x...} \
-    vthoaddress={0x...}
 ```
 
 ### Deposit intial funds of VET+VTHO into Pool

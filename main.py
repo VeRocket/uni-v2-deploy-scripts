@@ -17,7 +17,7 @@ def cli():
 @click.option('--token0-addr', 'token0_addr_', type=str, default=None, required=True, prompt='deployed token0 address on-chain', help='deployed token0 address on-chain')
 @click.option('--token1-addr', 'token1_addr_', type=str, default=None, required=True, prompt='deployed token1 address on-chain', help='deployed token1 address on-chain')
 def create_pool(wallet_, network_, factory_file_, factory_addr_, token0_addr_, token1_addr_):
-    '''Create a pool of two tokens on VeRocket DEX
+    '''Create a pool of two VIP-180 tokens on VeRocket DEX
     '''
     wallet = my_crypto.load_wallet(wallet_)
     connector = my_crypto.load_connector(network_)
@@ -49,14 +49,13 @@ def create_pool(wallet_, network_, factory_file_, factory_addr_, token0_addr_, t
     print(f"tx_id: {tx_id}")
 
 
-# def deposit_funds():
-#     '''Deposit funds to a VeRocket pool'''
+# def deposit_token_and_token():
+#     '''Deposit two VIP-180 tokens into a pool on VeRocket '''
 #     pass
 
 
-# def withdraw_funds():
-#     '''Withdraw funds from a VeRocket pool
-#     '''
+# def deposit_vet_and_token():
+#     ''' Deposit VET and a VIP-180 token into a pool on VeRocket '''
 #     pass
 
 
