@@ -24,7 +24,7 @@ Clone from VeChain Community open source cod [[link]](https://github.com/VeChain
 | vvet/vtho pool | 0x29a996b0ebb7a77023d091c9f2ca34646bea6ede |
 
 
-## Install (Linux, Mac)
+## Install Dependency (Linux, Mac)
 ```bash
 make install
 ```
@@ -41,17 +41,22 @@ python3 main.py --help
 
 ## Examples
 
-### Create a Pool of vVET(VET) + VTHO
+### - Create a Pool of vVET(Wrapped VET) + VTHO (between any two VIP-180 tokens)
 ```bash
 python3 main.py create_pool --wallet wallet.mainnet.json --network "https://mainnet.veblocks.net" --factory-file ./external/UniswapV2Factory.json --factory-addr "0xbdc2edaea65b51053ffce8bc0721753c7895e12f" --token0-addr "0x45429a2255e7248e57fce99e7239aed3f84b7a53" --token1-addr "0x0000000000000000000000000000456e65726779"
 ```
 
-### Calculate Pair.sol hash to be used by CREATE2 
+### - Calculate `Pair.sol` hash to be used by `CREATE2` 
+
+This is used when a dev tweaked the UniswapV2Pair.sol and re-compile.
+
+Fill this value into UniswapV2Library.sol.
+
 ```bash
 python3 main.py init-code-hash --json ./external/UniswapV2Pair.json
 ```
 
-### Deposit intial funds of VET+VTHO into Pool
+### - Deposit intial funds of VET+VTHO into Pool
 ```bash
 make deposit_funds network={http://url} \
     private={private_key} \
